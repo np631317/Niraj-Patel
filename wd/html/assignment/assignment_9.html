@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment9</title>
+</head>
+<body>
+
+<canvas id="myCanvas" width="300" height="100"></canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+// Rectangle
+ctx.fillStyle = "#ff6600";
+ctx.fillRect(20, 20, 80, 60);
+
+// Circle
+ctx.beginPath();
+ctx.arc(150, 50, 40, 0, 2 * Math.PI);
+ctx.fillStyle = "#ff0000";
+ctx.fill();
+
+// Orange rectangle
+ctx.fillStyle = "#ffcc99";
+ctx.fillRect(220, 30, 60, 40);
+</script>
+
+</body>
+</html>
