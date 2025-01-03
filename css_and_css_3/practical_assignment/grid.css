@@ -1,0 +1,70 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+}
+
+/* Product grid container */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    grid-gap: 20px; /* Adds spacing between the grid items */
+    max-width: 900px;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Product card styling */
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Product card image styling */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Product title and price styling */
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card .price {
+    font-size: 1rem;
+    color: #888;
+}
+
+/* Hover effect for each card */
+.product-card:hover {
+    transform: translateY(-10px); /* Moves the card up slightly */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}

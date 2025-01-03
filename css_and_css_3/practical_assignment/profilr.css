@@ -1,0 +1,79 @@
+/* General body styling */
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Profile card container */
+.profile-card {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Use border-box for the entire profile card */
+}
+
+/* Profile image */
+.profile-img {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: content-box; /* Use content-box here to include padding in width calculation */
+}
+
+.profile-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #ddd;
+}
+
+/* Profile information */
+.profile-info {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box; /* Use border-box here so padding is included in width */
+}
+
+.name {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.bio {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+    padding: 10px 0;
+}
+
+
+.follow-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the button's width */
+    transition: background-color 0.3s;
+}
+
+
+.follow-btn:hover {
+    background-color: #0056b3;
+}
